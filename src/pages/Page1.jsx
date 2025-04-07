@@ -105,6 +105,10 @@ console.log("count changed ",count)
       <div className='timers'>
 <p>{formatTimer()}</p>
       </div>
+
+      <Link to="/fetch">
+          <button type="button">Gotofetch api</button>
+        </Link>
   
     </>
   );

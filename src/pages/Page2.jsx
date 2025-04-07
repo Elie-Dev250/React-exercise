@@ -45,6 +45,9 @@ function Page2() {
             <button onClick={()=>handleinput("3")}>3</button>
             <button onClick={()=>handleinput("0")}>0</button>
         </div>
+        <Link to="/page5">
+          <button type="button">Go to shop</button>
+        </Link>
       </div>
     </div>
   )
