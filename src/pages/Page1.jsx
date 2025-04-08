@@ -107,7 +107,7 @@ console.log("count changed ",count)
       </div>
 
       <Link to="/fetch">
-          <button type="button">Gotofetch api</button>
+          <button type="button">Gotofetch Api</button>
         </Link>
   
     </>
