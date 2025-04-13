@@ -1,0 +1,121 @@
+.conter {
+    padding: 2rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .conter input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+  
+  .conter button {
+    padding: 10px 20px;
+    background-color: #00bcff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .conter button:hover {
+    background-color: #009fda;
+  }
+  
+  .all {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .all > div {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .avatar-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .hey {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Footer styles */
+  .footer {
+    margin-top: 50px;
+    background-color: #00bcff;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-text {
+    font-size: 13px;
+  }
+  
+
+
+
+  .colorp {
+    padding: 50px;
+    margin: 50px auto;
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+  
+  .colorp select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .colorp select:hover {
+    border-color: #00bcff;
+  }
+  
