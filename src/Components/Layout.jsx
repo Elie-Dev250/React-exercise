@@ -10,6 +10,8 @@ const Layout = () => {
         <Link to="/page3">Footers</Link>
         <Link to="/page4">Signup-form</Link>
         <Link to="/page5">Post</Link>
+        <Link to="/exer">Exercise</Link>
+
         
       </nav>
 

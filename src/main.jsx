@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Form } from 'react-router-dom';
 
 
 import Layout from './Components/Layout';
@@ -10,6 +10,10 @@ import Page3 from './pages/Page3';
 import Page4 from './pages/Page4';
 import Page5 from './pages/Page5';
 import Fetching from './pages/Fetching';
+import Exercise from './pages/Exercise';
+import Counter from './pages/Counter';
+
+import Formsub from './pages/Formsub';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -23,6 +27,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/page3" element={<Page3 />} />
           <Route path="/page4" element={<Page4 />} />
           <Route path="/page5" element={<Page5 />} />
+          <Route path="/counter-app" element={<Counter />} />
+          <Route path="/forms" element={<Formsub />} />
+          <Route path="/exer" element={<Exercise/>} />
           <Route path="/fetch" element={<Fetching />} />
         </Route>
       </Routes>

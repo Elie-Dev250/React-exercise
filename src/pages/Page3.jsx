@@ -34,6 +34,7 @@ console.log(data)
 
 <>
 <div className='conter'>
+  {data=="" && <p>USER NOT FOUND 🤣🤣</p>}
   <input type="text" placeholder='enter usernam'
   value={input} onChange={(e)=>setinput(e.target.value)}
    />
