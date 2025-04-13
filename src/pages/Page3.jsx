@@ -20,7 +20,7 @@ if(seachvalue!==""){
     setdata(result)
   })
   .catch(error=>{
-    seterror(!error)
+    seterror(error)
   })
 }
   },[seachvalue])
