@@ -15,6 +15,7 @@ function Page3() {
 if(seachvalue!==""){
   axios.get(`https://jsonplaceholder.typicode.com/users/?username=${seachvalue}`)
   .then(response=>{
+    console.log(response)
     let result=response.data
     console.log(result)
     setdata(result)
