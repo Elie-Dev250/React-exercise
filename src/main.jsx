@@ -36,7 +36,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/other" element={<Newform/>} />
           <Route path="/fetch" element={<Fetch/>} />
           <Route path="/fetch2" element={<Fetch2/>} />
-          <Route path="/fetch" element={<Fetching />} />
+          <Route path="/fetched" element={<Fetching />} />
         </Route>
       </Routes>
     </BrowserRouter>

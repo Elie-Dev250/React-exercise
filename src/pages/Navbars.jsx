@@ -10,7 +10,7 @@ const Navbar = () => {
         <Link to="/fetch">API</Link>
         <Link to="/other">Others</Link>
         <Link to="/fetch2">Fetch2</Link>
-        <Link to="/6">Task6</Link>
+        <Link to="/fetched">API 2</Link>
 
         
       </nav>
