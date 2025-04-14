@@ -15,6 +15,8 @@ import Counter from './pages/Counter';
 
 import Formsub from './pages/Formsub';
 import Fetch from './pages/Fetch';
+import Newform from './pages/Newform';
+import Fetch2 from './pages/Fetch2';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -31,7 +33,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/counter-app" element={<Counter />} />
           <Route path="/forms" element={<Formsub />} />
           <Route path="/exer" element={<Exercise/>} />
+          <Route path="/other" element={<Newform/>} />
           <Route path="/fetch" element={<Fetch/>} />
+          <Route path="/fetch2" element={<Fetch2/>} />
           <Route path="/fetch" element={<Fetching />} />
         </Route>
       </Routes>

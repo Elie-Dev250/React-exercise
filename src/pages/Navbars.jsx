@@ -8,8 +8,8 @@ const Navbar = () => {
         <Link to="/counter-App">Counter-App</Link>
         <Link to="/forms">Form</Link>
         <Link to="/fetch">API</Link>
-        <Link to="/4">Task4</Link>
-        <Link to="/5">Task5</Link>
+        <Link to="/other">Others</Link>
+        <Link to="/fetch2">Fetch2</Link>
         <Link to="/6">Task6</Link>
 
         
