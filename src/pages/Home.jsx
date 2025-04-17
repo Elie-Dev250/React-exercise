@@ -1,6 +1,9 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Webpage from './Webpage'
+import Page5 from './Page5'
+import Page1 from './Page1'
+import Page2 from './Page2'
 function Home() {
   return (
     <>
@@ -16,7 +19,11 @@ function Home() {
          voluptatum ad tenetur debitis autem. Accusamus
           tempora tenetur quisquam qui cupiditate?</p>
    </div>
+<Page5/>
 
+<Page1/>
+
+<Page2/>
 
   
     </Webpage>

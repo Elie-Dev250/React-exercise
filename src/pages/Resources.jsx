@@ -1,5 +1,6 @@
 import React from 'react'
 import Webpage from './Webpage'
+import Fetch from './Fetch'
 
 function Resources() {
   return (
@@ -7,6 +8,7 @@ function Resources() {
     <div>
       <h1>javascript</h1>
     </div>
+    <Fetch/>
     </Webpage>
   )
 }

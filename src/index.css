@@ -6,6 +6,9 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  
+  
+  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,7 +18,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #e4e4eb;
   text-decoration: inherit;
 }
 a:hover {
@@ -27,6 +30,15 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+body {
+  margin-top:200px ;
+ 
+  
+    padding-top: 80px; 
+
+
+  
 }
 
 button {
@@ -61,19 +73,20 @@ button:focus-visible {
   }
 }
 
-/* index.css */
+
 
 .navs {
-  background-color: #2c3e50;
-  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1365b8;
+  padding: 10px 1px;
   display: flex;
   gap: 30px;
- 
   justify-content: flex-end;
-  padding: 20px 15px;
-
-  
+  z-index: 1000; 
 }
+
 
 .navs a {
   color: #ecf0f1;
@@ -361,6 +374,7 @@ body {
   background-color: #fff;
   padding: 20px;
   margin: 20px auto;
+  margin-top: 3cm;
   width: 80%;
   max-width: 500px;
   border-radius: 8px;
@@ -428,9 +442,10 @@ body {
 /* Counter App */
 .but {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 4cm;
   background-color: #fff;
   padding: 20px;
+
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 80%;
@@ -472,7 +487,7 @@ body {
 .timers {
   text-align: center;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 2cm;
   color: #333;
 }
 
@@ -484,6 +499,7 @@ body {
 
 .post-list {
   display: flex;
+  margin-top: 3cm;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
@@ -599,13 +615,21 @@ body {
   list-style: none;
   padding: 0;
   margin-top: 3cm;
+  color: white;
 }
 
-.sidebar li {
+.sidebar ul li {
   margin: 1rem 0;
   cursor: pointer;
+  width: 50%;
+  height: 20px;
+ 
 }.sidebar li:hover{
-  background-color: #18bec4;
+ 
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  height: 20px;
 }
 
 
@@ -629,6 +653,7 @@ body {
   background-color: #d7ebdb;
   margin-left: 250px;
   transition: margin-left 0.3s ease-in-out;
+  margin-top: 70px;
 
 }
 

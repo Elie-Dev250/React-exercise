@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Navbar from './Navbars';
+import Page5 from './Page5';
 
 function Exercise() {
 
@@ -9,6 +10,7 @@ function Exercise() {
        
        <div>
         <Navbar/>
+    <Page5/>
        </div>
         );
         }

@@ -1,6 +1,7 @@
 import { Link, Outlet } from 'react-router-dom';
 import '../index.css';
 
+
 const Navbar = () => {
   return (
     <div>
@@ -20,6 +21,8 @@ const Navbar = () => {
 
       <hr />
       <Outlet />
+
+      
     </div>
   );
 };
