@@ -477,7 +477,7 @@ body {
 }
 
 
-/* page3 fething  css */
+
 
 
 
@@ -541,3 +541,105 @@ body {
   color: red;
 }
 
+.sawab{
+  background-color: yellow;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+}
+.sawab button{
+  background-color: dodgerblue;
+  transform: scale(1.09);
+  border-radius: 20px;
+  width: 135px;
+}
+.sawab button:hover{
+  background-color: green;
+  transition: ease-in-out 1s;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+
+
+.webpage-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+
+.sidebar {
+  width: 250px;
+  background-color: #06041b;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: translateX(0); 
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 3cm;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+  cursor: pointer;
+}.sidebar li:hover{
+  background-color: #18bec4;
+}
+
+
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #0e20e0;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 1000;
+}
+
+/* that content is reusable body in each sidebars */
+.content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #ecf0f1;
+  margin-left: 250px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+
+.sidebar.closed ~ .content {
+  margin-left: 0;
+}
+
+
+
+
+
+.content11{
+  background-color: rgb(169, 110, 110);
+}

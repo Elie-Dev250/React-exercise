@@ -1,73 +1,62 @@
-import React from 'react'
-import { useState } from 'react'
-
-
-
+import React, { useState, useEffect } from 'react';
 
 function Loginpage() {
-const[users,setUsers]=useState([])
-const[formdata,setformdata]=useState({
-    username: '',
-    email: '',
-    password: ""
-})
+  const [input, setInput] = useState('');
+  const [textdata, setTextData] = useState([]);
 
-const handleChange=(e)=>{
-    setformdata({...formdata,[e.target.name]:e.target.value})
-}
+  // ✅ Load saved tasks from localStorage once when the component mounts
+  useEffect(() => {
+    const savedTasks = JSON.parse(localStorage.getItem('myTasks'));
+    if (savedTasks && Array.isArray(savedTasks)) {
+      setTextData(savedTasks);
+    }
+  }, []);
 
-const handleSubmit=(e)=>{
-  e.preventDefault()
-  setUsers([...users,formdata])
-  console.log("new user added",formdata)
-  console.log("total users are",[...users,formdata])
+  // ✅ Save tasks to localStorage every time textdata changes
+  useEffect(() => {
+    localStorage.setItem('myTasks', JSON.stringify(textdata));
+  }, [textdata]);
 
+  const handleChange = (e) => {
+    setInput(e.target.value);
+  };
 
-  setformdata({
-    username: '',
-    email: '',
-    password: ''
-})
-}
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (input.trim() === '') return;
+    setTextData([...textdata, input]);
+    setInput('');
+  };
 
-
+  const handleDelete = (indexToDelete) => {
+    const newTasks = textdata.filter((_, index) => index !== indexToDelete);
+    setTextData(newTasks);
+  };
 
   return (
     <div style={{ padding: '20px' }}>
-      <h2>User Registration Form</h2>
+      <h2>To-Do List</h2>
+      <input
+        type="text"
+        placeholder="Enter task"
+        value={input}
+        onChange={handleChange}
+      />
+      <button onClick={handleSubmit}>Add Task</button>
 
-      <form onSubmit={handleSubmit}>
-        <label>Username:</label><br />
-        <input
-          type="text"
-          name="username"
-          value={formdata.username}
-          onChange={handleChange}
-          required
-        /><br /><br />
-
-        <label>Email:</label><br />
-        <input
-          type="email"
-          name="email"
-          value={formdata.email}
-          onChange={handleChange}
-          required
-        /><br /><br />
-
-        <label>Password:</label><br />
-        <input
-          type="password"
-          name="password"
-          value={formdata.password}
-          onChange={handleChange}
-          required
-        /><br /><br />
-
-        <button type="submit">Add User</button>
-      </form>
+      <div className="output">
+        {textdata.map((task, index) => (
+          <div key={index} className="sawab">
+            <ul>
+              <li>{task}</li>
+            </ul>
+            <button onClick={() => handleDelete(index)}>Delete Task</button>
+            <br />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
-export default Loginpage
+export default Loginpage;

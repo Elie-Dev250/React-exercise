@@ -12,6 +12,7 @@ const Navbar = () => {
         <Link to="/fetch2">Fetch2</Link>
         <Link to="/fetched">API 2</Link>
         <Link to="/for">FORMS</Link>
+        <Link to="/web">MY-WEB</Link>
 
 
         
