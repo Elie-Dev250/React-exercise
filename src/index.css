@@ -626,9 +626,10 @@ body {
 .content {
   flex: 1;
   padding: 2rem;
-  background-color: #ecf0f1;
+  background-color: #d7ebdb;
   margin-left: 250px;
   transition: margin-left 0.3s ease-in-out;
+
 }
 
 
@@ -640,6 +641,13 @@ body {
 
 
 
+
+
 .content11{
   background-color: rgb(169, 110, 110);
+}
+
+.haha p{
+font-size: 40px;
+color: #18bec4;
 }

@@ -6,10 +6,16 @@ function Home() {
     <>
     <Webpage>
     
-      <h1>
-  hello
-      </h1>
-   
+     <h1>helloooo</h1>
+
+     
+   <div className='haha'>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Similique id nesciunt molestiae sunt 
+         dolores nisi quae, inventore repudiandae, esse
+         voluptatum ad tenetur debitis autem. Accusamus
+          tempora tenetur quisquam qui cupiditate?</p>
+   </div>
 
 
   
