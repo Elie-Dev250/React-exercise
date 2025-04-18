@@ -18,12 +18,12 @@ function Home() {
          dolores nisi quae, inventore repudiandae, esse
          voluptatum ad tenetur debitis autem. Accusamus
           tempora tenetur quisquam qui cupiditate?</p>
-   </div>
-<Page5/>
+   </div><br />
 
-<Page1/>
 
-<Page2/>
+
+
+
 
   
     </Webpage>

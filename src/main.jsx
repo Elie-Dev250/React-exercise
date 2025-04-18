@@ -24,6 +24,7 @@ import Resources from './pages/Resources';
 
 import Events from './pages/Events';
 import Work from './pages/Work';
+import Portifolio from './pages/Portifolio';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -48,12 +49,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/resource" element={<Resources/>} />
           <Route path="/work" element={<Work/>} />
           <Route path="/event" element={<Events/>} />
-
-
-
-
-
-
+          <Route path="/port" element={<Portifolio/>} />
           <Route path="/for" element={<Loginpage/>} />
           <Route path="/fetched" element={<Fetching />} />
         </Route>

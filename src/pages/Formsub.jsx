@@ -1,16 +1,15 @@
-
-import { useState } from 'react';
+import { useState } from "react";
 
 function Formsub() {
   const [users, setUsers] = useState([]);
   const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    password: ''
+    username: "",
+    email: "",
+    password: "",
   });
 
   const handleChange = (e) => {
-    setFormData({...formData,[e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
@@ -20,45 +19,53 @@ function Formsub() {
     console.log("New user added:", formData);
     console.log("All users:", [...users, formData]);
 
-
     setFormData({
-      username: '',
-      email: '',
-      password: ''
+      username: "",
+      email: "",
+      password: "",
     });
   };
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div style={{ padding: "20px" }}>
       <h2>User Registration Form</h2>
 
       <form onSubmit={handleSubmit}>
-        <label>Username:</label><br />
+        <label>Username:</label>
+        <br />
         <input
           type="text"
           name="username"
           value={formData.username}
           onChange={handleChange}
           required
-        /><br /><br />
+        />
+        <br />
+        <br />
 
-        <label>Email:</label><br />
+        <label>Email:</label>
+        <br />
         <input
           type="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
           required
-        /><br /><br />
+        />
+        <br />
+        <br />
 
-        <label>Password:</label><br />
+        <label>Password:</label>
+        <br />
         <input
           type="password"
           name="password"
           value={formData.password}
           onChange={handleChange}
           required
-        /><br /><br />
+        />
+        <br />
+        <br />
 
         <button type="submit">Add User</button>
       </form>
@@ -67,5 +74,3 @@ function Formsub() {
 }
 
 export default Formsub;
-
-

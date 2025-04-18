@@ -17,6 +17,7 @@ const WebPage = ({ children }) => {
           <li><Link to="/home">Home</Link></li>
           <li><Link to="/work">Collaboration</Link></li>
           <li><Link to="/resource">Resources</Link></li>
+          <li><Link to="/port">My_Portfolio</Link></li>
         </ul>
       </div>
 

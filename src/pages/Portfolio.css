@@ -1,0 +1,70 @@
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .newbut {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .newbut:hover {
+    background-color: #0072ce;
+  }
+  
+  .profile-card {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .profile-card.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+  }
+  
+  .profile-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .profile-img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    animation: float 2s infinite ease-in-out;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #333;
+    animation: fadeIn 1.9s ease-in-out;
+  }
+  
+  @keyframes float {
+    0% { transform: translateX(100px); }
+    50% { transform: translateX(-100px); }
+    100% { transform: translateX(0); }
+ 
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
